@@ -1,0 +1,48 @@
+{
+  "$id": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "NDCGRID flow object specification",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "ndcVersion": {
+      "type": "string",
+      "enum": [
+        "15.2",
+        "16.1",
+        "16.2",
+        "17.1",
+        "17.2",
+        "18.1",
+        "18.2",
+        "19.1",
+        "19.2",
+        "20.1",
+        "20.2",
+        "21.1",
+        "21.3",
+        "21.3.1",
+        "21.3.2",
+        "21.3.3",
+        "21.3.4",
+        "21.3.5"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "prime-booking",
+        "servicing",
+        "ancillaries",
+        "standalone"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "ndcVersion",
+    "category"
+  ]
+}
